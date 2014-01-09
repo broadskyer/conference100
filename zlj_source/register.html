@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Register Aaccount</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="StyleSheet" href="css/style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="floater"></div>
+		<div class="loginFrame">
+		<form action="/registUser" method="post">
+	  		<div class="formField">
+	  			<!--<span>--><label>用户名（*）:&nbsp;</label>
+	  			<input type="text" id="username" required="required" name="username" maxlength="32" />
+	  			<!--<strong>不能少于6个字符</strong></span>-->
+	  		</div>
+	  		<div class="formField">
+	  			<!--<span>--><label>请输入密码（*）:&nbsp;</label>
+	  			<input class="formText" type="password" id="password1" name="password1" required="required" maxlength="32" />
+	  			<!--<strong>密码不能少于6位</strong></span>-->
+	  	  </div>
+	  	  <div class="formField">
+	  	  	<label>请再次输入密码（*）:&nbsp;</label>
+	  	  	<input class="formText" type="password" id="password2" name="password2" required="required" maxlength="32" />
+	  	  </div>
+	  	  <div class="formField">
+	  	    <label>Email:&nbsp;</label>
+	  	    <input class="formText" type="email" id="email" name="email" maxlength="32" />
+	  	  </div>
+	  	  <div class="formField">
+	  	  	<label>移动电话:&nbsp;</label>
+	  	  	<input class="formText" type="text" id="telephone" name="telephone" maxlength="32" />
+	  	  </div>
+	  	  <div class="formField">
+	  	  	<label>公司名称:&nbsp;</label>
+	  	  	<input class="formText" type="text" name="company" id="company" maxlength="32" />
+	  	  </div>
+	  	  <div class="formField">
+	  	  	<input type="submit" id="regist" name="注册" value="注册" />
+	  	  </div>
+	  	</form>
+	  </div>
+	</body>
+</html>

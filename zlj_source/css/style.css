@@ -1,0 +1,63 @@
+body
+{
+	width:768px;
+	margin:0px auto;
+	border:5px solid #333;
+	/*text-align: center;*/
+}
+form 
+{
+	margin-bottom: 18px;
+}
+.formField 
+{
+	overflow: auto;
+	width: 100%;
+	margin: 5px 0;
+}
+
+label 
+{
+	float: left;
+	display: block;
+	margin-right: 5px;
+	text-transform: capitalize;
+}
+label
+{
+    min-width: 200px;
+	width: auto;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+.formText 
+{
+	display: block;
+	float: left;
+}
+div.floater
+{
+	float:left;
+	height:50%;
+	margin-bottom: -120px;
+}
+div.loginFrame
+{	
+   	/*width: 800px;
+	height: 400px;
+	*/
+	clear:both;
+	width:50%;
+	height:240px;
+	position: relative;
+	margin:0 auto;
+	border:3px solid #333;
+}
+.loginName
+{
+	margin-bottom:10px;
+}
+.loginPwd
+{
+	margin-bottom: 10px;
+}
