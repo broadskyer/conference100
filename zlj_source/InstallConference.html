@@ -4,6 +4,7 @@
 		<title>Install&nbsp;Conference</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="StyleSheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 	</head>
 	<body>
 		<div class="install-wrapper">
@@ -38,8 +39,8 @@
 			</p>
 			<p>
 				<label>Last&nbsp;day(yyyy-mm-dd):&nbsp;</label>
-				<input type="text" maxlength="255" />
-				<input type="button" id="sel-date" value="select" />
+				<input id="datepicker" type="text" maxlength="255" />
+				<input  type="button" id="sel-date" value="select" />
 			</p>
 			<p>
 				<label>Year:&nbsp;</label>
@@ -207,5 +208,12 @@
             	<input type="button" value="Send&nbsp;request" />
             </div>
         </div>	
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $('#datepicker').datepicker();
+            });
+        </script>
 	</body>
 </html>
