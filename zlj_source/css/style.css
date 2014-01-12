@@ -255,6 +255,10 @@ legend {
 	width: 160px;
 	text-align: right;
 }
+.main-caption {
+	font-style: bold;
+	font-size: 32px;
+}
 .areas-wrapper .side-left {
 	width: 160px;
 	float: left;

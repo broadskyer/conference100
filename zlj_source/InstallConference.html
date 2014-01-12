@@ -39,8 +39,7 @@
 			</p>
 			<p>
 				<label>Last&nbsp;day(yyyy-mm-dd):&nbsp;</label>
-				<input id="datepicker" type="text" maxlength="255" />
-				<input  type="button" id="sel-date" value="select" />
+				<input id="datepicker" type="text" maxlength="255" readonly="readonly" />
 			</p>
 			<p>
 				<label>Year:&nbsp;</label>
@@ -202,7 +201,7 @@
             </div>
             <div class="submit-field">
             	<input type="checkbox" value="" id="agree" />
-            	<label>I accept</label>
+            	<label>I&nbsp;confirm&nbsp;that&nbsp;I&nbsp;have&nbsp;read&nbsp;and&nbsp;understood&nbsp;Policy</label>
             </div>
             <div class="send">
             	<input type="button" value="Send&nbsp;request" />
@@ -212,7 +211,11 @@
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script>
             $(function() {
-                $('#datepicker').datepicker();
+                $('#datepicker').datepicker({
+                    showOn: "button",
+                    buttonText: "select",
+                    dateFormat: "yy-mm-dd"
+                });
             });
         </script>
 	</body>
