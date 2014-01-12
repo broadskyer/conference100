@@ -111,6 +111,9 @@ legend {
 .clearfix { 
 	display: inline-table; 
 }
+a {
+	text-decoration: none;
+}
 /* Hides from IE-mac \*/
 * html .clearfix { 
 	height: 1%; 
@@ -146,8 +149,10 @@ legend {
 	width: 70px;
 	text-align: right;
 }
-.login-btn {
-	margin-left: 230px;
+.login-btn,
+.register-btn {
+	display: inline-block;
+	margin-left: 100px;
 	width: 63px;
 	height: 20px;
 	line-height: 20px;
@@ -156,11 +161,10 @@ legend {
 	margin-top: 10px;
 	cursor: pointer;
 }
-.newer-nav {
-	margin-top:10px;
-	text-align: center;
-	color: #f00;
+.register-btn {
+	margin-left: 20px;
 }
+
 /* register page */
 .rigister-wrapper {
 	width: 623px;
