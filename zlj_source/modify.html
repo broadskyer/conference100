@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>修改账户信息</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="StyleSheet" href="css/style.css" type="text/css" />
+	</head>
+	<body>
+        <div class="modify-wrapper">
+			<div class="personal-info">
+                <div class="caption">
+        		  <label>Personal&nbsp;Inforamtion</label>
+                </div>
+                <p>
+	  				<label>First&nbsp;names:&nbsp;</label>
+	  				<input type="text" maxlength="255" />
+	  			</p>
+	  			<p>
+	  				<label>Last&nbsp;name:&nbsp;</label>
+	  				<input type="text" maxlength="255" />
+	  	  		</p>
+	  	  		<p>
+	  				<label>Organization:&nbsp;</label>
+	  				<input type="text" maxlength="255" />
+	  			</p>
+	  			<p>
+	  				<label>Web&nbsp;site:&nbsp;</label>
+	  				<input type="text" maxlength="255" />
+	  			</p>
+            	<p>
+            		<label>Phone:&nbsp;</label>
+            		<input type="text" maxlength="255" />
+            	</p>
+                <p>
+                    <label>Address:&nbsp;</label>
+                    <input type="text" maxlength="255" />
+                </p>
+            	<p>
+            		<label>City:&nbsp;</label>
+            		<input type="text" maxlength="255" />
+            	</p>
+            	<p>
+            		<label>Post&nbsp;code:&nbsp;</label>
+            		<input type="text" maxlength="255" />
+            	</p>
+            	<p>
+            		<label>State:&nbsp;</label>
+            		<select class="sel-state">
+            			<option value=""></option>
+            			<option value="AK">AK</option>
+            		</select>
+            	</p>
+            	<p>
+            		<label>Country:&nbsp;</label>
+            		<select class="sel-country">
+            			<option value=""></option>
+            			<option value="af">Afghanistan</option>
+            		</select>
+            	</p>
+            	<div class="confirm">
+                	<p>
+                		<label>Enter&nbsp;your&nbsp;user&nbsp;name&nbsp;and&nbsp;password&nbsp;below:</label>
+                	</p>
+                	<p>
+                		<label>User&nbsp;name:&nbsp;</label>
+                		<input type="text" maxlength="255" required="required" />
+                	</p>
+                	<p>
+                	    <label>Password:&nbsp;</label>
+                	    <input type="password" maxlength="255" required="required" />
+                	</p>
+                	<div class="update-btn">
+                		<input type="button" value="Update Personal Information" />
+                	</div>
+                </div>
+			</div>
+			<div class="email-info">
+                <div class="caption">
+                    <label>Email&nbsp;Address</label>
+                </div>
+                <ul class="block">
+                	<li>address</li>
+                	<li>main</li>
+                	<li>delete</li>
+                </ul>
+                <div class="item">
+                    <ul class="block">
+                    <li>zlj@gmail.com</li>
+                    <li><input type="radio" name="add-email" /></li>
+                    <li><input type="checkbox" name="del-email" id="memail" /></li>
+                </ul>
+                <div class="update-btn">
+                    <input type="button" value="Apply" />
+                </div>
+				<p>
+					<label>New&nbsp;email:&nbsp;</label>
+					<input type="text" maxlength="255" />
+				</p>
+				<p>
+                	<label>Enter&nbsp;your&nbsp;user&nbsp;name&nbsp;and&nbsp;password&nbsp;below:</label>
+                </p>
+                <p>
+                	<label>User&nbsp;name:&nbsp;</label>
+                	<input type="text" maxlength="255" required="required" />
+                </p>
+                <p>
+                	<label>Password:&nbsp;</label>
+                    <input type="password" maxlength="255" require="required" />
+                </p>
+                <div class="update-btn">
+                	<input type="button" value="Add" />
+                </div>
+			</div>
+            <div class="username">
+                <div class="caption">
+                    <label>User&nbsp;Name</label>
+                </div>
+                <p>
+                    <label>Current&nbsp;User&nbsp;Name:&nbsp;</label>
+                    <input type="text" maxlength="255" required="required" />
+                </p>
+                <p>
+                    <label>New&nbsp;User&nbsp;name:&nbsp;</label>
+                    <input type="text" maxlength="255" required="required" />
+                </p>
+                <p>
+                    <label>Password:&nbsp;</label>
+                    <input type="password" maxlength="255" require="required" />
+                </p>
+                <div class="update-btn">
+                    <input type="button" value="Update&nbsp;User&nbsp;Name" />
+                </div>
+            </div>
+            <div class="pwd">
+                <div class="caption">
+                    <label>Password</label>
+                </div>
+                <p>
+                    <label>User&nbsp;name:&nbsp;</label>
+                    <input type="text" maxlength="255" required="required" />
+                </p>
+                <p>
+                    <label>Old&nbsp;Password:&nbsp;</label>
+                    <input type="password" maxlength="255" require="required" />
+                </p>
+                <p>
+                    <label>New&nbsp;Password:&nbsp;</label>
+                    <input type="password" maxlength="255" require="required" />
+                </p>
+                <p>
+                    <label>Retype&nbsp;New&nbsp;Password:&nbsp;</label>
+                    <input type="password" maxlength="255" require="required" />
+                </p>
+                <div class="update-btn">
+                    <input type="button" value="Upadate&nbsp;Password" />
+                </div>
+            </div>
+		</div>
+	</body>
+</html>
