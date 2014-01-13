@@ -301,39 +301,47 @@ a {
 	background-color: #e9e9e9;
 }
 
-.con-caption {
+.configuration-wrapper .con-caption {
 	font-weight: bold;
 	font-family: italic;
     text-align: center;
     border-bottom: 1px #000 solid;
 }
 
-.item {
+.configuration-wrapper .item {
 	height: 50px;
 	float: left;
 	width: 100%;
 	border-bottom: 1px #000 solid;
 }
 
-.right-item {
+.configuration-wrapper .right-item {
    margin-left: 300px; /*left-item*/
    height: 50px;
    line-height: 50px;
    padding-left: 10px;
 }
 
-.left-item {
+.configuration-wrapper .left-item {
 	width: 300px;
 	float: left;
 	height: 50px;
 	border-right: 1px #000 solid;
 }
-.item .left-item label {
+.configuration-wrapper .item .left-item label {
 	display: inline-block;
 	word-wrap: break-word;
 	padding: 10px;
 }
-
+.configuration-wrapper .config-btn {
+	text-align: center;
+	margin-top: 10px;
+	border-bottom: 2px #000 solid;
+	margin: 10px 0;
+}
+.configuration-wrapper .config-btn input {
+	margin: 10px 0;
+}
 /*send auther page*/
 .common-page {
     width: 800px;
@@ -357,11 +365,11 @@ a {
 .third {
 	font-size: 16px;
 }
-.item-two {
+.common-page .item-two {
 	border-bottom: 1px #000 solid;
 	margin-top: 10px;
 }
-.left-side {
+.common-page .left-side {
 	float: left;
 	width: 60px;
 	height: 50px;
@@ -369,12 +377,12 @@ a {
     padding-left: 10px;
 }
 
-.right-side {
+.common-page .right-side {
 	margin-left: 100px;
 	height: 50px;
 }
 
-.list ul li {
+.common-page .list ul li {
 	border: #000 solid;
 	display: inline-block;
 	border-width: 1px 1px 1px 1px;
@@ -386,14 +394,14 @@ a {
 .common-page p {
 	padding-left: 10px;
 }
-.list {
+.common-page .list {
 	padding-left: 10px;
 	margin-top: 20px;
 }
-.sub label {
+.common-page .sub label {
 	display: inline-block;
 	width: 90px;
 }
-.interval p {
+.common-page .interval p {
 	margin-top: 20px;
 }
