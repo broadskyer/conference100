@@ -42,6 +42,10 @@ Common = {
             success(TestData["login"]);
         }else if(url == "user/register.php"){
             success(TestData["register"]);
+        }else if(url == "user/edit.php"){
+            success(TestData["update-person-info"]);
+        }else if(url == "user/email/change.php"){
+            success(TestData["change-main-email"]);
         }
     }
 };

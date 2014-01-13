@@ -5,5 +5,11 @@ TestData = {
     },
     "register":{ 
         res : 0
+    },
+    "update-person-info":{ 
+        res : 0
+    },
+    "change-main-email":{ 
+        res : 0
     }
 };

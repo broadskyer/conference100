@@ -13,46 +13,46 @@
                 </div>
                 <p>
 	  				<label>First&nbsp;names:&nbsp;</label>
-	  				<input type="text" maxlength="255" />
+	  				<input type="text" maxlength="255" class="fname" />
 	  			</p>
 	  			<p>
 	  				<label>Last&nbsp;name:&nbsp;</label>
-	  				<input type="text" maxlength="255" />
+	  				<input type="text" maxlength="255" class="lname" />
 	  	  		</p>
 	  	  		<p>
 	  				<label>Organization:&nbsp;</label>
-	  				<input type="text" maxlength="255" />
+	  				<input type="text" maxlength="255" class="org" />
 	  			</p>
 	  			<p>
 	  				<label>Web&nbsp;site:&nbsp;</label>
-	  				<input type="text" maxlength="255" />
+	  				<input type="text" maxlength="255" class="website" />
 	  			</p>
             	<p>
             		<label>Phone:&nbsp;</label>
-            		<input type="text" maxlength="255" />
+            		<input type="text" maxlength="255" class="phone" />
             	</p>
                 <p>
                     <label>Address:&nbsp;</label>
-                    <input type="text" maxlength="255" />
+                    <input type="text" maxlength="255" class="addr" />
                 </p>
             	<p>
             		<label>City:&nbsp;</label>
-            		<input type="text" maxlength="255" />
+            		<input type="text" maxlength="255" class="city" />
             	</p>
             	<p>
             		<label>Post&nbsp;code:&nbsp;</label>
-            		<input type="text" maxlength="255" />
+            		<input type="text" maxlength="255" class="post" />
             	</p>
             	<p>
             		<label>State:&nbsp;</label>
-            		<select class="sel-state">
+            		<select class="sel-state" class="state">
             			<option value="US">US</option>
             			<option value="AK">AK</option>
             		</select>
             	</p>
             	<p>
             		<label>Country:&nbsp;</label>
-            		<select class="sel-country">
+            		<select class="sel-country" class="country">
             			<option value="xx">xx</option>
             			<option value="af">Afghanistan</option>
             		</select>
@@ -63,14 +63,14 @@
                 	</p>
                 	<p>
                 		<label>User&nbsp;name:&nbsp;</label>
-                		<input type="text" maxlength="255" required="required" />
+                		<input type="text" maxlength="255" required="required" class="username" />
                 	</p>
                 	<p>
                 	    <label>Password:&nbsp;</label>
-                	    <input type="password" maxlength="255" required="required" />
+                	    <input type="password" maxlength="255" required="required" class="pwd" />
                 	</p>
                 	<div class="update-btn">
-                		<input type="button" value="Update Personal Information" />
+                		<input type="button" value="Update Personal Information" class="update-personinfo"/>
                 	</div>
                 </div>
 			</div>
@@ -83,19 +83,20 @@
                 	<li>main</li>
                 	<li>delete</li>
                 </ul>
-                <div class="item">
+                <div class="item modify-email-wrapper">
                     <ul class="block">
                         <li>zlj@gmail.com</li>
-                        <li><input type="radio" name="add-email" /></li>
-                        <li><input type="checkbox" name="del-email" /></li>
+                        <li><input type="radio" name="main-email" value="1" class="main-email" checked="checked"/></li>
+                        <li><input type="checkbox" name="del-email" class="del-email" disabled="disabled"/></li>
                     </ul>
                     <ul class="block">
                         <li>zlj@gmail.com</li>
-                        <li><input type="radio" name="add-email" /></li>
-                        <li><input type="checkbox" name="del-email" /></li>
+                        <li><input type="radio" name="main-email" value="2" class="main-email" /></li>
+                        <li><input type="checkbox" name="del-email" class="del-email" /></li>
                     </ul>
+                </div>
                 <div class="update-btn">
-                    <input type="button" value="Apply" />
+                    <input type="button" value="Apply" class="modify-email" />
                 </div>
 				<p>
 					<label>New&nbsp;email:&nbsp;</label>
@@ -161,5 +162,9 @@
                 </div>
             </div>
 		</div>
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/testData.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/index.js"></script>
 	</body>
 </html>

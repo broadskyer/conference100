@@ -19,4 +19,41 @@ $(document).ready(function(){
 			}
 		});
 	});
+	//修改信息
+	$('.update-personinfo').on('click', function(){
+		var $personinfo = $('.modify-wrapper .personal-info'),
+			fame = $personinfo.find('.fame').val(),
+			lname = $personinfo.find('.lname').val(),
+			org = $personinfo.find('.org').val(),
+			website = $personinfo.find('.website').val(),
+			phone = $personinfo.find('.phone').val(),
+			addr = $personinfo.find('.addr').val(),
+			city = $personinfo.find('.city').val(),
+			post = $personinfo.find('.post').val(),
+			state = $personinfo.find('.state').val(),
+			country = $personinfo.find('.country').val(),
+			username = $personinfo.find('.username').val(),
+			pwd = $personinfo.find('pwd').val();
+		Common.getFake("user/edit.php",{username:fame, password:pwd, firstname:fame, lastname:lname, addr:addr, organization:org, website:website, phone:phone, city:city, postcode:post, country:country, state:state}, function(data){
+			if (data.res == 0) {
+				alert('更新个人信息成功！');
+			}
+		});
+	});
+	$('.main-email').on('click', function(){
+		var $par = $(this).parent().parent(),
+			$check = $par.find('.del-email');
+		$par.parent().find('.del-email').removeAttr('disabled');
+		$check.attr('disabled', 'disabled');
+	});
+	$('.modify-email').on('click', function(){
+		var $modifyemail = $('.modify-email-wrapper'),
+			mainemail = $modifyemail.find('.main-email').val(),
+			delemail = $modifyemail.find('.del-email').val();
+		Common.getFake("user/email/change.php",{email:mainemail}, function(data){
+			if (data.res == 0) {
+				alert('修改主email成功！');
+			}
+		});
+	});
 });
