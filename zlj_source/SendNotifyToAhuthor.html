@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Send Notification and Reviews to Author</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="StyleSheet" href="css/style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="common-page">
+			<div class="three-caption">
+				<p>
+					<label class="first">Send Notification and/or Reviews to Authors</label>
+				</p>
+				<p>
+					<label class="second">Email and Information</label>
+				</p>
+				<p>	
+					<label class="third">Paper Selection</label>
+				</p>
+			</div>
+			<div class="item-two">
+				<div class="left-side">
+					<label>Send: </label>
+				</div>
+				<div class="right-side">
+					<p>
+						<input type="checkbox" value="1" id="noti">
+						<label>notifications</label>
+					</p>
+					<p>
+						<input type="checkbox" value="1" id="reviews">
+						<label>reviews(excluding confidential part)</label>
+					</p>
+				</div>
+			</div>
+			<div class="item-two">
+				<div class="left-side">
+					<label>Include: </label>
+				</div>
+				<div class="right-side">
+					<p>
+						<input type="checkbox" value="1" id="scores">
+						<label>reviewer's scores</label>
+					</p>
+					<p>
+						<input type="checkbox" value="1" id="confidence">
+						<label>reviewer's confidence</label>
+					</p>
+				</div>
+			</div>
+			<div class="interval">
+				<p class="sub">
+					<label>Subject: </label>
+					<input type="text" maxlength="255">
+					<label>If have many submission ids, sperated with comma</label>
+				</p>
+				<p class="sub">
+					<label>Message: </label>
+					<textarea rows="10" cols="40"></textarea>
+				</p>
+				<p>
+					<label>Select decisions: </label>
+					<a href="">all</a>
+					<a href="">none</a>
+					<a href="">REJECT</a>
+					<a href="">ACCEPT</a>
+				</p>
+				<p>
+					<label>Select for repeated sending(not recommended): </label>
+					<input type="checkbox" value="1" id="tip">
+				</p>
+            </div>
+			<div class="list">
+				<ul>
+					<li>selected</li>
+					<li>#</li>
+					<li>Authors</li>
+					<li>Title</li>
+					<li>Decision</li>
+					<li>Review sent</li>
+					<li class="end-li">Notification sent</li>
+				</ul>
+            </div>
+		</div>
+	</body>
+</html>

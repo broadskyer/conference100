@@ -293,3 +293,107 @@ a {
 .install-wrapper .send {
 	padding-left: 160px;
 }
+
+/*conference configiration page*/
+.configuration-wrapper {
+	width: 800px;
+	margin: 0 auto;
+	background-color: #e9e9e9;
+}
+
+.con-caption {
+	font-weight: bold;
+	font-family: italic;
+    text-align: center;
+    border-bottom: 1px #000 solid;
+}
+
+.item {
+	height: 50px;
+	float: left;
+	width: 100%;
+	border-bottom: 1px #000 solid;
+}
+
+.right-item {
+   margin-left: 300px; /*left-item*/
+   height: 50px;
+   line-height: 50px;
+   padding-left: 10px;
+}
+
+.left-item {
+	width: 300px;
+	float: left;
+	height: 50px;
+	border-right: 1px #000 solid;
+}
+.item .left-item label {
+	display: inline-block;
+	word-wrap: break-word;
+	padding: 10px;
+}
+
+/*send auther page*/
+.common-page {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #e9e9e9;
+}
+
+.three-caption {
+	font-weight: bold;  
+	padding-left: 3px;
+}
+.three-caption p {
+	margin-bottom: 10px;
+}
+.first {
+	font-size: 24px;
+}
+.second {
+	font-size: 20px;
+}
+.third {
+	font-size: 16px;
+}
+.item-two {
+	border-bottom: 1px #000 solid;
+	margin-top: 10px;
+}
+.left-side {
+	float: left;
+	width: 60px;
+	height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+}
+
+.right-side {
+	margin-left: 100px;
+	height: 50px;
+}
+
+.list ul li {
+	border: #000 solid;
+	display: inline-block;
+	border-width: 1px 1px 1px 1px;
+	margin: 0;
+	float: left;
+	list-style: none;
+}
+
+.common-page p {
+	padding-left: 10px;
+}
+.list {
+	padding-left: 10px;
+	margin-top: 20px;
+}
+.sub label {
+	display: inline-block;
+	width: 90px;
+}
+.interval p {
+	margin-top: 20px;
+}
