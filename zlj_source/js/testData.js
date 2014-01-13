@@ -4,10 +4,6 @@ TestData = {
         res : 0
     },
     "register":{ 
-        res : 0,
-        result:{
-            id:'123456',
-            user:"lujun"
-        }
+        res : 0
     }
 };

@@ -40,8 +40,8 @@ Common = {
     getFake:function(url, data, success){
         if(url == "user/login.php"){
             success(TestData["login"]);
-        }else if(url == "other"){
-           
+        }else if(url == "user/register.php"){
+            success(TestData["register"]);
         }
     }
 };
