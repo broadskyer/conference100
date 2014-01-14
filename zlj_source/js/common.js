@@ -46,6 +46,8 @@ Common = {
             success(TestData["update-person-info"]);
         }else if(url == "user/email/change.php"){
             success(TestData["change-main-email"]);
+        }else if(url == "user/email/add.php"){
+            success(TestData["add-new-email"]);
         }
     }
 };

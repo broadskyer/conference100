@@ -11,5 +11,8 @@ TestData = {
     },
     "change-main-email":{ 
         res : 0
+    },
+    "add-new-email":{ 
+        res : 0
     }
 };

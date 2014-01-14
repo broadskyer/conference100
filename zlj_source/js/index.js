@@ -56,4 +56,15 @@ $(document).ready(function(){
 			}
 		});
 	});
+	$('.add-email').on('click', function(){
+		var $addemail = $('.add-email-wrapper'),
+			newemail = $addemail.find('.new-email').val(),
+			name = $addemail.find('.name').val(),
+			pwd = $addemail.find('.pwd').val();
+		Common.getFake("user/email/add.php",{email:newemail}, function(data){
+			if (data.res == 0) {
+				alert('增加新email成功！');
+			}
+		});
+	});
 });
