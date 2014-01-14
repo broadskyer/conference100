@@ -386,9 +386,9 @@ a {
 	border: #000 solid;
 	display: inline-block;
 	border-width: 1px 1px 1px 1px;
-	margin: 0;
 	float: left;
 	list-style: none;
+	padding: 0 5px;
 }
 
 .common-page p {
@@ -404,4 +404,66 @@ a {
 }
 .common-page .interval p {
 	margin-top: 20px;
+}
+
+.table {
+	margin: 0 auto;
+	margin-top: 20px;
+	border: #000 solid;
+	border-width: 1px 1px 1px 1px;
+}
+.td {
+	border: #000 solid;
+	border-width: 0 1px 1px 0;
+	text-align: center;
+	padding: 0 5px;
+}
+.th {
+	font-weight: bold;
+	border: #000 solid;
+	border-width: 0 1px 1px 0;
+	text-align: center;
+	padding: 0 5px;
+}
+
+.com-caption {
+	margin-left: 50px;
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.download {
+	float: right;
+}
+
+.common-page .paragraph {
+	margin: 30px;
+	margin-left: 60px;
+	padding-left: 10px;
+}
+
+
+.list-table ul {
+	margin-left: 20px;
+	width: 50%;
+}
+
+.1-li {
+	width: 39%;
+}
+.2-li {
+	width: 18%;
+}
+.3-li {
+	width: 39%;
+}
+.list-table ul .1-li, .list-table ul .2-li, .list-table ul .3-li {
+	float: left;
+	display: inline-block;
+	line-height: 30px;
+	height: 30px;
+	list-style: none;
+	margin: 0 0 1px 1px;
 }
