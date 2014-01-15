@@ -467,3 +467,116 @@ a {
 	list-style: none;
 	margin: 0 0 1px 1px;
 }
+
+/*author role navigation page*/
+.show-wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background-color: #e9e9e9;
+	height: 600px;
+}
+
+.show-caption {
+	margin: 50px 20px 20px 20px;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.show-wrapper .title-bar {
+	margin: 50px 30px 20px 30px;
+}
+
+.show-wrapper .title-bar ul li {
+	float: left;
+	width: 18%;
+	display: inline-block;
+	padding: 1px 5px;
+	background-color: #e9e9e9;
+	position: relative;
+	border: red solid;
+	border-width: 0 1px 0 0;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.main-content {
+	margin: 150px 30px 20px 30px;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+/*new submission page*/
+.submission-caption {
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.filed-name {
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.author-info p, .paper-field p {
+	margin-bottom: 20px;
+}
+.author-info p label, .paper-field p label {
+	display: inline-block;
+	width: 150px;
+}
+
+.author-info p input {
+	margin-left: 2px;
+}
+
+/*invite pc page*/
+.invite-caption {
+	font-weight: bold;
+	font-size: 36px;
+	margin-bottom: 30px;
+}
+
+.invite-field p {
+	margin-bottom: 20px;
+}
+
+.invite-field p label {
+	display: inline-block;
+	width: 150px;
+}
+
+.table-field {
+	margin: 20px 0;
+}
+
+/*add new PC member page*/
+.sub-caption {
+	font-weight: bold;
+	font-size: 26px;
+	margin-left: 10px;
+}
+.multi, .single {
+	margin-top: 20px;
+}
+
+.multi p, .single p {
+	margin: 20px;
+}
+
+.multi p label, .single p label {
+	display: inline-block;
+	width: 200px;
+}
+
+.td-dotted {
+	border: #a5a1a1 dotted;
+	border-width: ;
+}
+
+.th-none {
+	border-width: 0 0 0 0;
+}
+.table-side {
+	border-width: 1px 0px 1px 0px;
+}

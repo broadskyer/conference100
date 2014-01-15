@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Invitations to Program Committee</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="StyleSheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	</head>
+	<body>
+		<div class="common-page">
+			<div class="invite-caption">
+				<label>Invitations to Program Committee</label>
+			</div>
+			<div class="invite-field">
+				<p>
+					<label>Role(*): </label>
+	                <select>
+	                	<option value="0"></option>
+	                	<option value="1">author</option>
+	                	<option value="2">chair
+	                	</option>
+	                </select>
+				</p>
+				<p>
+					<label>Expiry date(*): </label>
+					<input class="date1" type="text" readonly>
+				</p>
+                <p>
+                	<label>Invitees(*): email1, email2,..seperated by comma</label>
+                	<textarea rows="10" cols="30"></textarea>
+                </p>
+                <p>
+                	<label>Letter subject(*): </label>
+                	<input type="text" maxlength="255">
+                </p>
+                <p>
+                	<label>Letter text(*): </label>
+                	<textarea rows="15" cols="30"></textarea>
+                </p>
+                <p>
+                	<label>attachment: </label>
+                	<input type="file" value="choose file">
+                </p>
+			</div>
+			<div class="update-btn">
+				<input type="button" value="Invite">
+			</div>
+		</div>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script>
+            $(function() {
+                $('#date1').datepicker({
+                    showOn: "button",
+                    buttonText: "select",
+                    dateFormat: "yy-mm-dd"
+                });
+            });
+        </script
+	</body>
+</html>

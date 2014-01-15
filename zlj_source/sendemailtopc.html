@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>send email to invitees</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="StyleSheet" href="css/style.css" type="text/css" />
+	</head>
+	<body>
+		<div class="common-page">
+			<div class="invite-caption">
+				<label>Send Email to PC Members</label>
+			</div>
+			<div class="member">
+				<div class="sub-caption">
+				<label>Select PC Members</label>
+			</div>
+				<div class="table-field table-side">
+					<table class="table table-side">
+					   <th class="th th-none">&nbsp;</th>
+					   <th class="th th-none">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chairs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+					   <th class="th th-none">&nbsp;</th>
+						<tr class="tr">
+							<td class="td td-dotted"><input type="checkbox" value="1"> Ding, Ying</td>
+							<td class="td td-dotted"><input type="checkbox" value="2"> Ding, Ying
+							</td>
+							<td class="td td-dotted"><input type="checkbox" value="3"> Ding, Ying
+							</td>
+						</tr>
+					</table>
+					<table class="table table-side">
+					   <th class="th th-none">&nbsp;</th>
+					   <th class="th th-none">Ordinary PC Members</th>
+					   <th class="th th-none">&nbsp;</th>
+						<tr class="tr">
+							<td class="td td-dotted"><input type="checkbox" value="4"> Ding, Ying</td>
+							<td class="td td-dotted"><input type="checkbox" value="5"> Ding, Ying
+							</td>
+							<td class="td td-dotted"><input type="checkbox" value="6"> Ding, Ying
+							</td>
+						</tr>
+					</table>
+
+				</div>
+			</div>
+			<div class="invite-field">
+				<p>
+					<label>Subject(*): </label>
+					<input type="text" maxlength="255">
+				</p>
+				<p>
+					<label>Body(*): </label>
+					<textarea rows="15" cols="40">Dear[*FIRST-NAME*],</textarea>
+				</p>
+				<p>
+					<label>Attachment: </label>
+					<input type="file">
+				</p>
+			</div>
+			<div class="update-btn">
+				<input type="button" value="Send">
+			</div>
+		</div>
+	</body>
+</html>
