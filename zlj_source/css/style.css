@@ -571,12 +571,14 @@ a {
 
 .td-dotted {
 	border: #a5a1a1 dotted;
-	border-width: ;
+	border-width: 2px 2px 0 2px;
 }
 
 .th-none {
+	width: 33%;
 	border-width: 0 0 0 0;
 }
 .table-side {
+	width: 90%;
 	border-width: 1px 0px 1px 0px;
 }
