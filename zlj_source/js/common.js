@@ -19,11 +19,11 @@ Common = {
             }
         });
     },
-    get:function(url, data, success){              //一个基本的get请求封装
+    get:function(url, reqdata, success){              //一个基本的get请求封装
         $.ajax({
             url: Common.baseurl + url,
             type:"get",
-            data:data,
+            data:reqdata,
             dataType:"json",
             error:function(){
                 cosole.log('error request!');

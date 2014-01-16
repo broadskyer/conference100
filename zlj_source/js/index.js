@@ -25,8 +25,8 @@ $(document).ready(function(){
 	$('.rigister-btn').on('click', function(){
 		var $rigister = $('.rigister-wrapper'),
 			name = $rigister.find('.name').val(),
-			pwd = $rigister.find('password').val(),
-			email = $rigister.find('email').val();
+			pwd = $rigister.find('.password').val(),
+			email = $rigister.find('.email').val();
 		Common.get("/user/new",{username:name, password:pwd, email:email}, function(data){
 			if (data.res == 0) {
 				location.href = 'modify.html';
