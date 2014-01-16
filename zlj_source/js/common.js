@@ -49,5 +49,23 @@ Common = {
         }else if(url == "user/email/add.php"){
             success(TestData["add-new-email"]);
         }
+    },
+    isEmail:function(strEmail){                     //邮箱验证
+        if (strEmail.search(/^w+((-w+)|(.w+))*@[A-Za-z0-9]+((.|-)[A-Za-z0-9]+)*.[A-Za-z0-9]+$/) != -1){
+            return true;
+        }
+        return false;
+    },
+    isEmpty: function(str){                            //是否为空
+        if(str.length == 0){
+            return true;
+        }
+        return false;
+    },
+    isNumber: function(str){                         //数值检测
+        return !isNaN(str); 
+    },
+    trim: function(str){                               //去除空格
+        return str.replace(/(^\s*)|(\s*$)/g, ""); 
     }
 };
