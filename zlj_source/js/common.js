@@ -1,4 +1,5 @@
-Common = {    
+Common = {
+    baseurl: 'http://2.aliyun.ramytech.com:8080/CMSServerJSP',    
     post:function(url, data, success){              //一个基本的post请求封装
         $.ajax({
             url:url,
@@ -20,19 +21,14 @@ Common = {
     },
     get:function(url, data, success){              //一个基本的get请求封装
         $.ajax({
-            url:url,
+            url: Common.baseurl + url,
             type:"get",
             data:data,
             dataType:"json",
             error:function(){
-                //Common.tip(TipData["1002"], 0);
-                //ajax错误提示
+                cosole.log('error request!');
             },
-            success:function(data){  
-                if(data && data.res != 0){
-                    //Common.showError(data);
-                    //错误处理code转换成文字提示给用户
-                };  
+            success:function(data){ 
                 success && success(data);
             }
         });

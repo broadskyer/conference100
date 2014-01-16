@@ -1,4 +1,18 @@
 $(document).ready(function(){
+	var errorInfo = ['OK',
+					'ERR_INVAILD_PARAM',
+					'ERR_SERVER_INTERNAL_ERROR',
+					'ERR_ACTION_NOT_SUPPORT',
+					'ERR_USER_NOT_EXISTS',
+					'ERR_USERNAME_ALREADY_EXISTS',
+					'ERR_EMAIL_ALREADY_EXISTS',
+					'ERR_USER_PW_NOT_MATCH',
+					'ERR_SEED_TIMEOUT',
+					'ERR_SEED_HASH_NOT_MATCH',
+					'ERR_NO_CONERENCE_OR_ROLE_SELECTED',
+					'ERR_CONFERENCE_NOT_EXIST',
+					'ERR_NOT_PERMITTED',
+					'ERR_ROLE_CONFERENCE_NOT_MATCH'];
 	$('.login-btn').on('click', function(){
 		var name = $('.username').val(),
 			pwd = $('password').val();
@@ -13,9 +27,11 @@ $(document).ready(function(){
 			name = $rigister.find('.name').val(),
 			pwd = $rigister.find('password').val(),
 			email = $rigister.find('email').val();
-		Common.getFake("user/register.php",{username:name, password:pwd, email:email}, function(data){
+		Common.get("/user/new",{username:name, password:pwd, email:email}, function(data){
 			if (data.res == 0) {
 				location.href = 'modify.html';
+			} else {
+				alert(errorInfo[data.res]);
 			}
 		});
 	});
