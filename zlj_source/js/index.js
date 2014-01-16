@@ -15,10 +15,12 @@ $(document).ready(function(){
 					'ERR_ROLE_CONFERENCE_NOT_MATCH'];
 	$('.login-btn').on('click', function(){
 		var name = $('.username').val(),
-			pwd = $('password').val();
-		Common.getFake("user/login.php",{username:name, password:pwd}, function(data){
+			pwd = $('.password').val();
+		Common.get("/user/login",{username:name, password:pwd}, function(data){
 			if (data.res == 0) {
 				location.href = 'register.html';
+			} else {
+				alert(errorInfo[data.res]);
 			}
 		});
 	});
